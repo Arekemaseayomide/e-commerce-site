@@ -28,13 +28,13 @@ const Cart = () => {
           <div className="row py-4">
             {isCartEmpty ? (
               <div className='col-md-12 text-center'>
-                <h4 className='text-black-50'>Your Cart Is Empty</h4>
+                <h4 className='text-black-50' style={{height: 400}}>Your Cart Is Empty</h4>
               </div>
             ) : (
               cartItems.map((product, index) => (
              
                 <div className='col-12 mb-4' key={index}>
-                  <div className='border rounded p-3' style={{ boxShadow: '0px 0px 10px rgb(135, 106, 193)' }}>
+                  <div className='border rounded p-3' style={{ boxShadow: '0px 0px 10px rgb(22, 166, 201)' }}>
                   <div className="row">
                     <div className="col-md-4 text-center">
                       <img src={product.image} alt={product.title} height="200px" width="180px"/> 
